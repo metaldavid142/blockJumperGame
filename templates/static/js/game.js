@@ -3,7 +3,7 @@ window.addEventListener('load', ()=>{
   startGame()
 })
 
-// Inicialización de variables
+// Declaración e inicialización de variables
 var canvasWidth = 600;
 var canvasHeight = 400;
 
@@ -159,7 +159,7 @@ function detectCollision() {
   if (playerRight > blockLeft && 
       playerLeft < blockLeft && 
       playerBottom > blockTop) {
-      //alert("Fin del juego")
+      alert("Fin del juego")
   }
 }
 
