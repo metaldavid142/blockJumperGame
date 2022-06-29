@@ -1,5 +1,7 @@
+/*Importar fuente*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+/*Estilo para todo el contenido*/
 *{
    margin: 0;
    padding: 0;
@@ -7,6 +9,7 @@
    font-family: 'Noto Sans', sans-serif;
 }
 
+/*Crear una grilla, centrar su contenido y fondo degradado*/
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -23,6 +26,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/*Estilo para canvas*/
 canvas {
     border:2px solid rgb(177, 177, 177);
     background-color: #ffffff;
@@ -30,6 +34,7 @@ canvas {
     max-height: 500px;
 }
 
+/*Estilo el pie de página*/
 footer {
     display: flex;
     justify-content: center;
@@ -37,6 +42,7 @@ footer {
     margin-top: 4rem;
 }
 
+/*Estilo para contenido responsive, canvas con altura y anchura max-min*/
 @media screen and (max-width: 540px){
     canvas {
         width: 90%;

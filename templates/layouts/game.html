@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game | Player</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+    <!--Link hacia el archivo game.css-->
     <link rel="stylesheet" href="{{url_for('static', filename='css/game.css')}}">
 </head>
     <body>
-        <h1>Mi juego</h1>
-        <canvas id="canvas"></canvas>  <!--Aqui creamos el canvas-->
-        <footer>Aplicaciones de tecnologías web &copy 2022</footer>
+        <!--Título e instrucciones del juego-->
+        <h1>BIENVENIDO A BLOCK JUMPER GAME !!</h1><br>
+        <h3>Instrucciones</h3><br>
+        <p>El juego se inicia automáticamente, por lo que debe estar atento para presionar la barra espaciadora 
+            y saltar los obstaculos que se aproximen hacia la gema verde.
+        </p>
+        
+        <!--Creación  de canvas con su identificador para colocar el estilo con css-->
+        <canvas id="canvas"></canvas>
+        
+        <!--Pie de página con el enlace al archivo game.js-->
+        <footer>Aplicación de Tecnologías Web &copy David Sangucho</footer>
         <script src="{{url_for('static', filename='js/game.js')}}"></script>
     </body>
 </html>
