@@ -159,7 +159,7 @@ function detectCollision() {
   if (playerRight > blockLeft && 
       playerLeft < blockLeft && 
       playerBottom > blockTop) {
-      alert("Fin del juego")
+      //alert("Fin del juego")
   }
 }
 

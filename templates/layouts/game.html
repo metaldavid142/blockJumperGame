@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,29 @@
 
     <!--Link hacia el archivo game.css-->
     <link rel="stylesheet" href="{{url_for('static', filename='css/game.css')}}">
+    <!--Bootstrap para varias versiones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-    <body>
-        <!--Título e instrucciones del juego-->
-        <h1>BIENVENIDO A BLOCK JUMPER GAME !!</h1><br>
-        <h3>Instrucciones</h3><br>
-        <p>El juego se inicia automáticamente, por lo que debe estar atento para presionar la barra espaciadora 
-            y saltar los obstaculos que se aproximen hacia la gema verde.
-        </p>
-        
-        <!--Creación  de canvas con su identificador para colocar el estilo con css-->
-        <canvas id="canvas"></canvas>
-        
-        <!--Pie de página con el enlace al archivo game.js-->
-        <footer>Aplicación de Tecnologías Web &copy David Sangucho</footer>
-        <script src="{{url_for('static', filename='js/game.js')}}"></script>
-    </body>
+
+<body>
+    <!--Título e instrucciones del juego-->
+    <h2>BIENVENIDO A BLOCK JUMPER GAME !!</h2><br>
+    <h5>Instrucciones:</h5><br>
+    <ul>
+        <li>Presionar la  barra espaciadora para saltar.</li>
+        <li>Evitar los obstáculos.</li>
+        <li>Presionar varias veces sobre la alerta de fin de juego para reinciar.</li>
+    </ul><br>
+
+    <!--Creación  de canvas con su identificador para colocar el estilo con css-->
+    <canvas id="canvas"></canvas>
+
+    <!--Pie de página con el enlace al archivo game.js-->
+    <footer>Aplicación de Tecnologías Web &copy David Sangucho</footer>
+    <script src="{{url_for('static', filename='js/game.js')}}"></script>
+</body>
+
 </html>
